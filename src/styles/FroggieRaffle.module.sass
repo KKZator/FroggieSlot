@@ -1,0 +1,66 @@
+.raffleContainer
+    background-color: black
+    background-image: radial-gradient(90% 70% at 100% 90%, #192F25 0%, rgba(25, 47, 37, 0.00) 100%) 
+    color: white
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-top: 2%
+
+.currentTDisplayer
+    width: 75vw
+    height: 100%
+    display: flex
+    gap: 3vw
+    justify-content: space-around
+    align-items: flex-start
+    flex-wrap: wrap
+    @media (min-width: 992px) and (max-width: 1200px) //laptop
+        flex-direction: row  
+        width: 80vw    
+    @media (min-width: 768px) and (max-width: 991px) //tablets
+        flex-direction: row        
+        width: 85vw    
+    @media (min-width: 600px) and (max-width: 767px) //smartphone
+        flex-direction: row        
+        width: 85vw     
+    @media (max-width: 600px) //small screen
+        flex-direction: column 
+        align-items: center      
+        width: 85vw     
+        
+.currentTicket
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 5%
+    
+
+.titleCont
+    h3
+        text-align: center 
+        font-family: Poppins 
+        font-size: 4.2vw 
+        font-style: normal 
+        font-weight: 900 
+        line-height: normal 
+        text-transform: uppercase 
+        background: radial-gradient(2445.92% 36.34% at 52.6% 50%, rgba(255, 255, 255, 0.58) 0%, #FFF 100%) 
+        background-clip: text 
+        -webkit-background-clip: text 
+        -webkit-text-fill-color: transparent 
+
+.previousTicket
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-top: 5%
+    margin-bottom: 5vh
+    
+
+/* .currentTicket
+    max-width: 70%
+    margin-top: 5% */

@@ -1,0 +1,657 @@
+.reel {
+    border: 2px white solid;
+    height: 45vh;
+    width: 15vw;
+    margin: 1vw;
+    overflow: hidden; 
+    border-radius: 20px;
+    border: 5px solid #03FF77;
+    background: linear-gradient(180deg, rgba(65, 98, 72, 0.81) 0%, rgba(25, 37, 27, 0.63) 50.43%, rgba(43, 64, 47, 0.32) 100%);
+    box-shadow: 4px 4px 15px 2px #01E375, -4px -4px 15px 4px #01E375;
+}
+
+.slot{
+    display: flex;
+    justify-content: center;
+}
+
+.spinNow{
+    display: flex;
+    width: 18vw;
+    padding: 1vw 3vh;
+    justify-content: center;
+    align-items: center;
+    gap: 27.312px;
+    border-radius: 1.3vw;
+    background: #30C952;
+    border: none
+}
+
+.spinNow > p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.9vh;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.betAmount{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 45vw;
+    margin-top: 5%;    
+    clip-path: polygon(0% 0%,80% 0%,100% 20%,100% 100%,76% 100%,20% 100%,0% 80%,0% 10%);
+    border: 3px solid rgb(59, 121, 91);
+    background: linear-gradient(108deg, rgba(89, 176, 134, 0.367) 1.59%, rgba(89, 176, 134, 0.15) 94.54%);
+    backdrop-filter: blur(6.089743614196777px);
+}
+.betPerSpin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.betPerSpin > h3 {
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 2.2vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    background: radial-gradient(2445.92% 36.34% at 52.6% 50%, rgba(255, 255, 255, 0.44) 0%, #FFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.betPerSpin > p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 0.8vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+    margin-top: -7%;
+}
+
+.spinButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+
+.playInfo{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 2vh;
+}
+
+
+.timeToPlay > div >  h3{
+    color: #FFF;
+    font-family: "Poppins";
+    font-size: 1.9vw;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.spinConta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.timeButt{
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    background-image:  linear-gradient(180deg, #049D54 0%, rgba(19, 160, 93, 0.31) 100%);
+    border: none;
+    cursor: pointer;
+}
+
+.timeButt > div {
+    color: #FFF;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.butt{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.prova{
+    color: #2DB64C;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.coinCounter{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;  
+}
+
+.counter{
+    width: 20vw;
+    height: 5vw;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #212020 0%, rgba(23, 2, 2, 0.00) 100%);
+    box-shadow: 0px 4px 4px 2px rgba(121, 213, 141, 0.50), 0px -4px 4px 0px rgba(121, 213, 141, 0.50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.counter > p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 3.18px;
+    text-transform: uppercase;
+}
+
+.minus{
+    position: relative;
+    left: 2.5vw;
+}
+
+.plus{
+    position: relative;
+    right: 2.5vw;
+}
+
+.symbolz{
+    width: 4.5vw;
+    height: 4.5vw;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, #02934D 0%, #59B086 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.symbolz > p {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.shine{    
+    animation: accSpe 0.8s 3;
+}
+
+.infoContainer{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .playInfo{
+        width: 110vh;
+    }
+
+    .reel{
+        width: 25vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .betAmount{
+        width: 50vw;
+    }
+    .reel{
+        width: 25vw;
+        height: 35vh;
+    }
+    .playInfo{
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .timeToPlay > div >  h3{ 
+        font-size: 2.8vw;
+    }
+    .timeButt{        
+        width: 8vw;
+        height: 8vw;   
+    }
+    
+    .timeButt > div {
+        font-size: 2.5vw;
+    }
+
+    .counter{
+        width: 30vw;
+        height: 5vw;          
+    }
+
+    .betPerSpin > h3 {
+        font-size: 4.5vw;
+    }
+    
+    .betPerSpin > p {
+        font-size: 1.8vw;
+    }
+
+    .counter{
+        width: 40vw;
+        height: 8vw;          
+    }
+
+    .counter > p {
+        font-size: 2.7vh;
+    }
+
+    .betPerSpin > h3 {
+        font-size: 5.8vh;
+    }
+    .betPerSpin{
+        height: 50% ;
+    }
+    .betPerSpin > p {
+        font-size: 3.5vw;
+    }
+
+    .betAmount{
+        width: 80%;
+    }
+
+    .symbolz{
+        width: 5vh;
+        height: 5vh;
+    }
+
+    .minus{
+        position: relative;
+        left: 4vw;
+        top: -.3vh;
+    }
+    
+    .plus{
+        position: relative;
+        right: 4vw;
+        top: -.3vh;
+    }
+    
+}
+
+@media (min-width: 600px) and (max-width: 767px){
+   
+    .reel{
+        width: 30vw;
+    }
+    .spinNow{
+        padding: 1vw 1vh;
+    }
+    .playInfo{
+        flex-direction: column;
+        height: 70vh;
+    }
+
+    .timeToPlay > div >  h3{ 
+        font-size: 2.8vw;
+    }
+    .timeButt{        
+        width: 8vw;
+        height: 8vw;   
+    }
+    
+    .timeButt > div {
+        font-size: 2.5vw;
+    }
+
+    .counter{
+        width: 30vw;
+        height: 5vw;          
+    }
+
+    .betPerSpin > h3 {
+        font-size: 4.5vw;
+    }
+    
+    .betPerSpin > p {
+        font-size: 1.8vw;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .reel{
+        width: 30vw;
+    }
+    .spinNow{
+        padding: 1vw 0.5vh;
+    }
+    .playInfo{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .timeToPlay > div >  h3{ 
+        font-size: 3.8vw;
+    }
+    .timeButt{        
+        width: 10vw;
+        height: 10vw;   
+    }
+     
+    .timeButt > div {
+        font-size: 3.5vw;
+    }
+
+    .counter{
+        width: 40vw;
+        height: 8vw;          
+    }
+
+    .counter > p {
+        font-size: 2.7vh;
+    }
+
+    .betPerSpin > h3 {
+        font-size: 5.8vh;
+    }
+    .betPerSpin{
+        height: 50% ;
+    }
+    .betPerSpin > p {
+        font-size: 3.5vw;
+    }
+
+    .betAmount{
+        width: 80%;
+    }
+
+    .symbolz{
+        width: 4.2vh;
+        height: 4.2vh;
+    }
+
+    .minus{
+        position: relative;
+        left: 50%;
+        top: -.5%;
+    }
+    
+    .plus{
+        position: relative;
+        right: 50%;
+        top: -.5%;
+    }
+}
+
+@keyframes accSpe {
+    0%{
+        /* opacity: 1; */
+    }
+    50%{
+        box-shadow:
+        0 0 60px 13px #8d1f1fc4,  /* inner white */
+        0 0 100px 16px rgb(255, 251, 9), /* middle magenta */
+        0 0 140px 19px rgb(10, 42, 42);
+    }
+    100%{
+        /* opacity: 1; */
+    }
+    
+}
+
+.symbol {
+    margin-top: 3px;
+}
+
+
+
+
+.gira {    
+    animation: roll 4.7s 1 ease-out;  
+    filter: blur(1px);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.bounce {    
+    animation: bounce 4.5s 1 ease-out;  
+    filter: blur(1px);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.appizzina{
+    animation: appizzina 4.7s 1 linear;
+    filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    position: relative;
+    top: -100px;
+}
+
+.fastroll{
+    animation: fastroll 2.5s 1 ease-out;
+    filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.slow{
+    animation: slow 4.8s 1 ease-out;
+    filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.fastLinear{
+    animation: fastlinear 4.5s 1 linear;
+    filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.fastInOut{
+    animation: fastlinear 4.5s 1 ease-out;
+    filter: blur(1px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+.steel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;    
+    position: relative;
+    top: -100px;
+}
+
+.steel2{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+
+.gira2{
+    animation: gira2 4.5s 1 ease-in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: -100px;
+}
+    
+.slot {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+@keyframes gira2 {
+    0%{
+        transform: translateY(-1700px);
+    }
+    90% {
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slow {
+    0%{
+        transform: translateY(-1700px);
+    }
+   /*  50%{
+        transform: translateY(170px);
+    } */
+    90%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes appizzina {
+    0%{
+        transform: translateY(-1700px)
+    }
+    65%{
+        transform: translateY(-250px);
+    }
+    90%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fastroll {
+    0%{
+        transform: translateY(-1700px);
+    }
+   /*  50%{
+        transform: translateY(170px);
+    } */
+    90%{
+        transform: translateY(-250px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fastlinear {
+    0%{
+        transform: translateY(-1700px);
+    }
+   /*  50%{
+        transform: translateY(170px);
+    } */
+    90%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes roll {
+    0%{
+        transform: translateY(-1760px);
+    }
+   /*  50%{
+        transform: translateY(170px);
+    } */
+    90%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes bounce {
+    0%{
+        transform: translateY(-1760px);
+    }
+    90%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

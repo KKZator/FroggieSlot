@@ -1,0 +1,83 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model isalive {
+  vivo Int @db.TinyInt
+  id   Int @id
+}
+
+model lottery {
+  idlottery                Int                        @id @default(autoincrement())
+  startdate                DateTime                   @db.DateTime(0)
+  enddate                  DateTime                   @db.DateTime(0)
+  lotteryticket            lotteryticket[]
+  lotterywinningnumbers    lotterywinningnumbers[]
+  userlotteryparticipation userlotteryparticipation[]
+}
+
+model lotteryticket {
+  idlotteryTicket  Int                @id @default(autoincrement())
+  idLott           Int
+  lottery          lottery            @relation(fields: [idLott], references: [idlottery], onDelete: NoAction, onUpdate: NoAction, map: "idLott")
+  ticketnumbers    ticketnumbers[]
+  userboughtticket userboughtticket[]
+
+  @@index([idLott], map: "idLott_idx")
+}
+
+model lotterywinningnumbers {
+  idLottery     Int
+  winningNumber String  @db.VarChar(45)
+  lottery       lottery @relation(fields: [idLottery], references: [idlottery], onDelete: Cascade, map: "idLottery")
+
+  @@id([idLottery, winningNumber])
+}
+
+model ticketnumbers {
+  ticketId      Int
+  number        Int
+  lotteryticket lotteryticket @relation(fields: [ticketId], references: [idlotteryTicket], onDelete: NoAction, onUpdate: NoAction, map: "ticketId")
+
+  @@id([ticketId, number])
+}
+
+model user {
+  userAddress              String                     @id @db.VarChar(42)
+  userboughtticket         userboughtticket[]
+  userlotteryparticipation userlotteryparticipation[]
+}
+
+model userboughtticket {
+  userAdd        String        @db.VarChar(42)
+  idTicket       Int
+  winningNumbers String        @db.VarChar(45)
+  lotteryticket  lotteryticket @relation(fields: [idTicket], references: [idlotteryTicket], onDelete: Cascade, map: "idTicket")
+  user           user          @relation(fields: [userAdd], references: [userAddress], onDelete: Cascade, map: "userAdd")
+
+  @@id([userAdd, idTicket])
+  @@index([idTicket], map: "idTicket_idx")
+}
+
+model userlotteryparticipation {
+  participantAddress  String  @db.VarChar(42)
+  participatedLottery Int
+  user                user    @relation(fields: [participantAddress], references: [userAddress], onDelete: Cascade, map: "participantAddress")
+  lottery             lottery @relation(fields: [participatedLottery], references: [idlottery], onDelete: Cascade, map: "participatedLottery")
+
+  @@id([participantAddress, participatedLottery])
+  @@index([participatedLottery], map: "participatedLottery_idx")
+}
+
+model userslot {
+  address            String @id @db.VarChar(45)
+  claimableAmount    String @db.VarChar(45)
+  remainingSpins     Int
+  totalBoughtSpins   Int
+  totalWinningAmount String @db.VarChar(45)
+}

@@ -1,0 +1,53 @@
+.gameSelectionMain
+    background-color: black
+    background-image: radial-gradient(90% 70% at 100% 90%, #192F25 0%, rgba(25, 47, 37, 0.00) 100%) 
+    color: white
+    width: 100%
+    height: 100%
+
+
+
+.backTop
+    height: 100%
+    width: 100%   
+    background: red 
+    background-image: radial-gradient(100% 90% at 90% 70%, #192F25 0%, rgba(25, 47, 37, 0.00) 100%) 
+    
+.frogs
+    display: flex
+    width: 100%
+    justify-content: space-between
+
+.gameSelectionContainer
+    height: 40vh
+    width: 62vw
+    display: flex   
+    justify-content: space-between
+    margin-top: -3%         
+    @media (min-width: 768px) and (max-width: 991px) //tablets
+        flex-direction: column
+        height: 75vh
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 2vh
+    @media (min-width: 600px) and (max-width: 767px) //smartphone
+        flex-direction: column
+        height: 100%
+        justify-content: space-between
+        align-items: center        
+        padding-bottom: 2vh        
+        height: 75vh
+    @media (max-width: 600px) //small screen
+        flex-direction: column
+        height: 100%
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 2vh            
+        height: 75vh
+
+
+.cont
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center

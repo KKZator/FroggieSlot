@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
+     
+.container
+    width: 30vw
+    height: 35vh
+    border: 3px solid rgba(59, 121, 91, 0.30)
+    clip-path: polygon(0% 0%,80% 0%,100% 20%,100% 100%,76% 100%,20% 100%,0% 80%,0% 10%)
+    background: linear-gradient(108deg, rgba(89, 176, 134, 0.30) 1.59%, rgba(89, 176, 134, 0.05) 94.54%)
+    backdrop-filter: blur(6.089743614196777px)
+    position: relative
+    display: flex
+    justify-content: space-around
+    align-items: center
+    .genCont
+        display: flex
+        align-items: center
+        width: 90%
+    @media (min-width: 992px) and (max-width: 1200px) //laptop
+        justify-content: center
+        .img
+            height: 25vh
+            width: 30vw
+        .name
+            height: 15vh
+            .title
+                font-size: 2vh
+            button
+                width: 7vw
+                height: 3vh
+                font-size: 1vh
+    @media (min-width: 768px) and (max-width: 991px) //tablets
+        justify-content: center
+        width: 50vw
+        .genCont
+            flex-direction: column
+        .img
+            height: 20vh
+            width: 25vw
+        .name
+            height: 15vh
+            justify-content: center
+            align-items: center
+            .title
+                font-size: 3vh
+            button
+                width: 15vw
+                height: 3vh
+                font-size: 1.2vh
+    @media (min-width: 600px) and (max-width: 767px) //smartphone
+        justify-content: center
+        .genCont
+            flex-direction: column
+        .img
+            height: 15vh
+            width: 25vw
+        .name
+            height: 15vh
+            justify-content: center
+            align-items: center
+            .title
+                font-size: 3vh
+            button
+                width: 10vw
+                height: 3vh
+                font-size: 1.2vh
+    @media (max-width: 600px) //small screen
+        justify-content: center        
+        width: 60vw
+        height: 35vh
+        .genCont
+            flex-direction: column
+        .img
+            height: 15vh
+            width: 35vw
+        .name
+            height: 15vh
+            justify-content: center
+            align-items: center
+            .title
+                font-size: 3vh
+            button
+                width: 15vw
+                height: 3vh
+                font-size: 1.2vh
+
+
+
+
+.img
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 30vh
+    width: 35vw    
+
+.name
+    height: 25vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-around    
+    .title
+        color: #FFF 
+        text-align: justify 
+        font-family: 'Poppins', sans-serif
+    button    
+        display: flex 
+        width: 10vw 
+        height: 5vh
+        justify-content: center 
+        align-items: center 
+        gap: 13.015px 
+        border-radius: 10.412px 
+        background-color: #30C952 
+        border: none
+        cursor: pointer
+        color: #FFF 
+        text-align: center 
+        font-family: Poppins 
+        font-size: 2vh 
+        font-style: normal 
+        font-weight: 500 
+        line-height: normal 
+        text-transform: uppercase
+        &:hover
+            background-color: #256533 
+        
+
+
