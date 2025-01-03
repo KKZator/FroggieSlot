@@ -1,0 +1,26 @@
+{
+  "name": "lottery3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.11.0",
+    "@rainbow-me/rainbowkit": "^1.0.11",
+    "jsonwebtoken": "^9.0.0",
+    "next": "12.3.4",
+    "notyf": "^3.10.0",
+    "prisma": "^4.11.0",
+    "react": "18.2.0",
+    "react-countup": "^6.4.2",
+    "react-dom": "18.2.0",
+    "sass": "^1.60.0",
+    "viem": "^1.12.1",
+    "wagmi": "^1.4.2",
+    "weighted-random": "^0.1.0"
+  }
+}
